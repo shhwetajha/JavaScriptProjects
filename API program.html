@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Product</title>
+
+<style>
+.btn{background-color:red;
+border-radius:15px;
+border:red;
+color:white;
+padding:7px;}
+.label{font-weight:bolder;}
+
+input{background-color:darkgray;
+color:white;
+border-radius:15px;
+font-weight:bolder;}
+
+.content2{display:flex;
+align-items:center;
+justify-content:center;
+border:2px solid black;
+border-radius:15px;
+width:650px;
+background-color:dimgray;
+}
+
+</style>
+
+</head>
+
+
+<body>
+<h1>PRODUCT DETAILS USING API</h1>
+<div class="content2">
+<table>
+<tr>
+<td colspan="2"><label for="Id" class="label">Id:</label></td>
+<td colspan="2"><input type="text" name="" id="Id"/></td>
+<td rowspan="7"><img src="./flower123.jpg" alt="loading" id="imgProduct" width="300px"></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="title" class="label">title:</label></td>
+<td colspan="2"><input type="text" name="" id="title"/></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="description" class="label"> description </label></td>
+<td colspan="2"> <input type="text"name="" id="description"/></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="price" class="label">price</label></td>
+<td colspan="2"><input type="text" name="" id="price"/></td>
+</tr>
+
+
+
+<tr>
+<td colspan="2"><label for="discountPercentage" class="label">discountPercentage</label></td>
+<td colspan="2"><input type="text" name="" id="discountPercentage"/></td>
+</tr>
+
+
+
+<tr>
+<td colspan="2"><label for="brand" class="label">stock</label></td>
+<td colspan="2"><input type="brand" name="" id="brand"/></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="stock" class="label">brand</label></td>
+<td colspan="2"><input type="text" name="" id="stock"/></td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+<td><button onclick="add_click()" class="btn">Add</button></td>
+
+</tr>
+
+<tr>
+<td><button onclick="first_click()" class="btn">First</button></td>
+<td><button onclick="previous_click()" class="btn">Previous</button></td>
+<td><button onclick="next_click()" class="btn">Next</button></td>
+<td><button onclick="last_click()" class="btn">last</button></td>
+</tr>
+
+
+
+<tr><td colspan="4" ><button onclick="show_click()" class="btn">Load Data From API</button></td></tr>
+
+
+
+</table>
+</div>
+
+<div id="my_div"></div>
+<script src="./product123.js"></script>
+
+
+</body>
+
+</html>

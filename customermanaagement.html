@@ -1,0 +1,77 @@
+<html>
+<head><title> Customer Management system</title>
+<style>
+.label{font-weight:bolder;}
+.btn{background-color:red;
+border-radius:15px;
+border:red;
+color:white;
+padding:7px;
+cursor:pointer;}
+
+input{background-color:darkgray;
+color:white;
+border-radius:15px;
+font-weight:bolder;}
+
+.content2{display:flex;
+align-items:center;
+justify-content:center;
+border:2px solid black;
+border-radius:15px;
+width:400px;
+background-color:dimgray;
+}
+
+</style>
+</head>
+<body>
+<div class="content1">
+<h1>CUSTOMER MANAGEMENT <br/>SYSTEM</h1>
+<div class="content2">
+<table>
+<tr>
+<td colspan="2"><label for="CustId" class="label"> Customer Id:</label></td>
+<td colspan="2"><input type="text" name="" id="CustId"/></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="CustName"class="label"> Customer Name:</label></td>
+<td colspan="2"><input type="text" name="" id="CustName"/></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="CustAdd"class="label"> Customer Address </label></td>
+<td colspan="2"> <input type="text"name="" id="CustAdd"/></td>
+</tr>
+
+<tr>
+<td colspan="2"><label for="CustMob"class="label">Customer Mobile No.</label></td>
+<td colspan="2"><input type="text" name="" id="CustMob"/></td>
+</tr>
+
+
+<tr>
+<td><button onclick="add_click()"  class="btn">Add</button></td>
+<td><button onclick="search_click()" class="btn">Search</button></td>
+<td><button onclick="delete_click()" class="btn">Delete</button></td>
+<td><button onclick="modify_click()" class="btn">Modify</button></td>
+</tr>
+
+<tr>
+<td><button onclick="first_click()" class="btn">First</button></td>
+<td><button onclick="previous_click()" class="btn">Previous</button></td>
+<td><button onclick="next_click()"class="btn">Next</button></td>
+<td><button onclick="last_click()" class="btn">last</button></td>
+</tr>
+
+<tr><td colspan="4"><button onclick="show_click()" class="btn">Show All Customer</button></td></tr>
+</table>
+</div>
+
+<div id="my_div"></div>
+
+<script src="./cusmanage.js"></script>
+</body>
+
+</html>
